@@ -36,27 +36,37 @@
     <div class="bg-dark text-white p-2">
         <span class="navbar-brand ml-2">BOOK STORE</span>
     </div>
+
+    <div id="categories">
+        Our Books
+    </div><br /><br />
+
     <div class="row m-1 p-1">
-        <div id="categories" class="col-3">
-            Our Books
+
+
+        <div id="types" class="col-3">
+            <vc:types></vc:types>
         </div>
-       @*<div class="col-9">*@
+
+
+        <div class="col-9">
 
             <div class="container">
                 <main role="main" class="pb-3">
                     @RenderBody()
                 </main>
             </div>
+            <div />
         </div>
 
-            <footer class="border-top footer text-muted">
-                <div class="container">
-                    &copy; 2023 - mission9_nconrad3 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                </div>
-            </footer>
-            <script src="~/lib/jquery/dist/jquery.min.js"></script>
-            <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-            <script src="~/js/site.js" asp-append-version="true"></script>
-            @RenderSection("Scripts", required: false)
+        <footer class="border-top footer text-muted">
+            <div class="container">
+                @*&copy; 2023 - mission9_nconrad3 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>*@
+            </div>
+        </footer>
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        @RenderSection("Scripts", required: false)
 </body>
 </html>
