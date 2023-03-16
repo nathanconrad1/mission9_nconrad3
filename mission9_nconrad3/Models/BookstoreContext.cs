@@ -20,6 +20,7 @@ namespace mission9_nconrad3.Models
         }
 
         public virtual DbSet<Book> Books { get; set; }
+        public DbSet<Buy> Buys { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
